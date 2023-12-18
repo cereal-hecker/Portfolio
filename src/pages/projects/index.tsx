@@ -11,7 +11,7 @@ function Projects() {
           PROJECTS
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {projectsData.map((project, index) => {
+          {projectsData.map((project) => {
             return (
               <div 
                 className="w-full transform transition-transform duration-500 hover:scale-105 hover:ring-4 hover:ring-dark-purple hover:ring-opacity-50"
