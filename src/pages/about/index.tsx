@@ -1,13 +1,12 @@
 import Skill from "../../components/skill";
-
 function About() {
   return (
     <>
       <div className="h-screen mx-28">
         <p className="text-8xl mb-8 text-dark-purple font-bold">ABOUT</p>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 gap-8">
           <div>
-              <p className="text-2xl mb-10">
+              <p className="mb-10">
                 I like diving deep into coding and design to bring ideas to life
                 through web and app development. <br />
                 <br />

@@ -1,10 +1,4 @@
-interface TagProps {
-    text: string;
-}
-
-function Tag({ text }: TagProps) {
-    return <div className="bg-highlight px-2">{text}</div>;
-}
+import Tag from "./tag";
 
 interface ProjectProps {
     heading: string;
@@ -15,15 +9,15 @@ interface ProjectProps {
 
 function Project({ heading, content, tags, link }: ProjectProps) {
     return (
-        <div className="border-3 border-dark-purple p-4">
-            <h1 className="text-xl font-bold">{heading}</h1>
-            <p className="text-xl mb-2">{content}</p>
+        <div className="border-[3px] border-dark-purple p-4 flex flex-col justify-between">
+            <h1 className="font-bold mb-6">{heading}</h1>
+            <p className=" mb-4">{content}</p>
             <div className="flex flex-wrap space-x-2 pb-10">
                 {tags.map((tag, index) => (
                     <Tag key={index} text={tag} />
                 ))}
             </div>
-            <a href={link} className='bg-dark-purple text-white py-[7px] px-4 inline-block rounded'>Go to project ➞</a>
+            <div><a href={link} className='bg-dark-purple text-white py-[7px] b-0 px-4 inline-block rounded'>Go to project ➞</a></div>
         </div>
     );
 }
