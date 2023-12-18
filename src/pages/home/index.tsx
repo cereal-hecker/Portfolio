@@ -16,7 +16,7 @@ function Home() {
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.5 }}
+              transition={{ duration: 1 }}
             >
               <div className="relative mt-2">
                 <p className="text-8xl font-bold z-10 relative">Riya</p>
@@ -26,7 +26,7 @@ function Home() {
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 1 }}
+              transition={{ duration: 1 }}
             >
               <div>
                 <p className="pt-16">you might know me as</p>
@@ -35,7 +35,7 @@ function Home() {
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 1.5 }}
+              transition={{ duration: 1 }}
             >
               <div className="">
                 <p className="text-3xl font-semibold">cereal-hecker</p>
@@ -44,7 +44,15 @@ function Home() {
             </motion.div>
           </div>
         </div>
-        <div className="">ss</div>
+        <div className="flex items-center justify-center">
+        <motion.img
+  className="w-[500px] h-[500px]"
+  src="/images/random-circle.png"
+  initial={{ scale: 0 }}
+  animate={{ scale: 1 }}
+  transition={{ duration: 1 }}
+/>
+        </div>
       </div>
     </>
   );

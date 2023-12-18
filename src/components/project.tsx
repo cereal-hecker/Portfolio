@@ -9,7 +9,7 @@ interface ProjectProps {
 
 function Project({ heading, content, tags, link }: ProjectProps) {
     return (
-        <div className="border-[3px] border-dark-purple p-4 flex flex-col justify-between">
+        <div className="border-[3px] h-full border-dark-purple p-4 flex flex-col justify-between">
             <h1 className="font-bold mb-6">{heading}</h1>
             <p className=" mb-4">{content}</p>
             <div className="flex flex-wrap space-x-2 pb-10">
